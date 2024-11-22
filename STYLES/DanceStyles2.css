@@ -30,30 +30,29 @@ nav ul {
 }
 
 body { 
-   background-color: rgb(102, 76, 163);
+   background-color: rgb(114, 98, 151);
  }
 
 
 .container {
     display: block;
-    width:   60%;
-    padding: 1em 0; 
-    border: white 3px dashed;
-    /* background-color: rgb(75, 77, 73); */
-    background-color: rgb(166, 169, 221);
-    background-image: url('C:/Users/Jill Bennings/Pictures/swingLegs.jpg');
-    background-size: cover;
-    background-repeat: repeat;
+    width:max-content;
+    padding: 1.2em 2em; 
+    border: white 5px solid;
+    /* background-color: rgb(75, 77, 73); 
+    background-color:  rgb(166, 169, 221); */
+    background-image:  url('C:/Users/Jill Bennings/Pictures/swingLegs.jpg');
+    background-size:   cover;
 }
 
 
-@media(min-width:900px)
+@media(min-width:900px)  /*do this as long as abov this min width */
 {
     .container {
         display:flex;
-        /*justify-content: center; */
-        align-items: center;
-        width: 70%;
+        justify-content: center;
+        align-items:     stretch;  /* vertcal alignment of row items*/
+        /* width: min-content; */
         gap: 6px;
         background-color: rgb(166, 169, 221);
     }
@@ -68,12 +67,12 @@ h1,h2,h3 {
 
 div {
     background-color: #AAA;
+    align-self: stretch;
     /*color:    black; */
-    width: 7rem;
+    width: 5rem;
    /* min-height: 20vh; */
     text-align: center;
-    margin:     auto;
-    margin-top: 3vh;
+    /* margin:     auto; */
     margin-top: 3vh;
     border-radius: 7px;
 }
@@ -87,7 +86,7 @@ div {
 }
 
 .box {
-    min-width: 300px;
+    min-width: 260px;
     padding:   16px;
     border:    3px solid rgb(247, 243, 247) ;
     font-size: 1.2em;
@@ -104,8 +103,6 @@ div {
     text-align:  center;
     /*color:     black; */
     text-decoration: underline; 
-    /*margin-bottom:  8px;
-    padding-bottom: 4px; */
 }
 
 .box h2 {
