@@ -1,0 +1,54 @@
+<head>
+    <script>  
+    function   pbf()
+    {    
+        alert("button pushed  " + document.udat.billy.value);
+    }
+    function  danceLoc(selector) {  
+        var idx,sel 
+        idx = selector.selectedIndex;
+        sel = selector.options[idx].text;
+       /* document.udat.billy.value = sel; */
+        var myStr = document.udat.billy.value 
+                + '\n'+'\r'
+                + document.udat.email.value 
+                 + '\r'+'\n'
+                + sel;
+
+        document.udat.dataForm.value = myStr;
+    }
+    </script>
+</head>
+<h1>new page</h1>
+<form name="udat" action="get">
+    <br> Name:
+    <br>
+<input type="text"  name="billy" size=22  value="stuff"  > 
+<br>Email:<br>
+<input type="email" name="email" size=22  value="billy@gmail.com"  > 
+<br>Phone Number:<br>
+<input type="phone" name="phone" size=22  value="999-555-12345"  > 
+<br> <br>
+Area of Interest <br>
+<select name="dloc" id="zzz" onclick="danceLoc(this)">
+    <option value=""> Boston</option>
+    <option value=""> North Shore</option>
+    <option value=""> West Suburban Boston</option>
+    <option value=""> South Shore</option>
+    <option value=""> Worcester</option>
+    <option value=""> S New Hapshire</option>
+</select>
+Type of Dance<br>
+<select name="dtypc" id="yyy" onclick="danceLoc(this)">
+    <option value=""> Swing</option>
+    <option value=""> WCS</option>
+    <option value=""> Country</option>
+    <option value=""> Ballroom</option>
+    <option value=""> Tango</option>
+</select>
+<br><br><hr><br>
+<input type="button" name="nina" width=12   value="start" onclick="pbf()"> 
+<br><br>
+<input type="textArea" name="dataForm" coln=16 rows=7>
+
+</form>

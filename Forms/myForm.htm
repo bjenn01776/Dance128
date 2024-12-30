@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    form {
+        /*background-color: rgb(43, 226, 226); */
+        max-width: 13em;
+        margin: auto;
+    }
+    label { 
+        display: block;
+        font-size: 1.2em;
+        font-weight: bolder;
+    }
+    input { width: 18em;}
+    button { 
+        background-color: black;
+        color: white;
+        font-size: 1.2em;
+        font-weight: bolder;
+        border-radius: 8px;;
+    }
+
+    </style>  
+</head>
+<body>
+ 
+
+<form action="\page\form" method="get">
+
+    <label for="user">Name</label>
+    <input type="text" name="user" > 
+    
+    <label for="mailer">Email</label>
+    <input type="email" name="mailer" placeholder="bj@gmail.com">
+    
+    <label for="mailer">Password</label>
+    <input type="password" name="pwd"  text="passw" >
+    
+    <label  for="msg">Message</label>
+    <input type="textarea" name="msg"  row="5"  placeholder="test field input">    
+
+    
+    </br></br>
+    <button type="submit" onClick="console.log('Hi Billy')"> SUBMIT</button> 
+
+</form>
+
+   
+</body>
+</html>
