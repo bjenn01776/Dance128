@@ -1,0 +1,157 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> hl from me</title>
+
+<link rel="styleSheet"  type="text/css"  href="CSS/main.css" />
+ 
+<!-- script src="JScript/myJavaScript.js"></script -->
+<style>
+
+
+.header {
+    background-color: rgb(127, 255, 249);
+    height: 10vh;
+    text-align: center;
+    width: 85%;
+    margin: auto;
+}
+
+.header  h1 {
+    font-size: 36px;
+    margin-top: 0px ;
+    padding-top: 12px;
+    text-align: center;
+    /* border: 3px black solid; */  
+}
+
+.navbar {
+    background-color: rgb(87, 84, 84);
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    width: 85%;
+    margin: auto;
+    height: 10vh;
+    left: 64px;
+    top: 0px;
+}
+
+.navbar h1 { display: inline;
+    margin-top: 6px;
+    padding-left: 3em;
+}
+
+
+.navbar ul {
+    display:inline; 
+    margin-top:  12px; 
+    padding-top: 12px;
+   /* outline: 3px solid red; */
+}
+
+.navbar li {
+    display:inline;
+    float: right;
+    width: 5em;
+    font-size: 24px;
+    margin-top:12px;
+    padding: 0 12px;
+ /*   outline: 3px dash rgb(28, 97, 41); */
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.pic {
+    height: 74vh;
+    background-image: url('./Images/danceLegs.webp') ;
+    background-size: cover;
+    width: 85%;
+    margin: auto;
+}
+
+
+</style>
+</head>
+
+
+<body>
+    
+    <nav class="navbar"> DANCE BOOK
+        <ul>
+            <li> <a href="#sun">Sunday  </a></li>
+            <li> <a href="#sat">Saturday</a></li>
+            <li> <a href="#fri">Friday  </a></li>
+            <li> <a href="./Pages/myEmailJS.html"> Calender </a></li>
+        </ul>
+    </nav>
+
+    <div class="pic">hello</div>
+
+    <div class="container">
+
+        <div class="grd-header"> <h1  id="hdg1"> Upcoming Events </h1>  </div>
+    
+        <div  class="grd-txt-fri">
+            <a name="fri"></a>
+            <h1> Friday</h1>
+            <p style="margin:auto";>
+                <ul id="list">
+                <li> Karen's Ballrom Dance, Wakefield MA, 8:00-10:00, Lesson 7:30</li>
+                <li> Swing Dance, Cambridge MA, 8:00-10:00, Lesson 7:30</li>
+                <li> Ballrom Dance - Super Shag, Waltham MA, 8:00-10:00, Lesson 8:00</li>
+                <li> Karen's Ballrom Dance, Wakefield MA, 8:00-10:00, Lesson 7:30</li>
+                <li> Karen's Ballrom Dance, Wakefield MA, 8:00-10:00, Lesson 7:30</li>
+                </ul>
+            </p>
+        </div>
+
+        <div  class="myImg grd-img-fri">   </div>
+ 
+
+
+
+        <div  class="grd-img-sat">   </div>
+    
+        <div  class="grd-txt-sat"> 
+            <a name="sat"></a>
+            <h1> Saturday</h1>
+            <p>
+                <ul>
+               <li> Karen's Ballrom Dance, Wakefield MA, 8:00-10:00, Lesson 7:30</li>
+               <li> Swing Dance, Cambridge MA, 8:00-10:00, Lesson 7:30</li>
+               <li> Ballrom Dance - Super Shag, Waltham MA, 8:00-10:00, Lesson 8:00</li>
+               <li> Karen's Ballrom Dance, Wakefield MA, 8:00-10:00, Lesson 7:30</li>
+               <li> Karen's Ballrom Dance, Wakefield MA, 8:00-10:00, Lesson 7:30</li>
+                </ul>
+           </p>
+        </div>
+
+
+        <div  class="grd-txt-fri"; style="background-color: coral" >
+            <a name="sun"> </a>
+            <h1> Sunday</h1>
+            <p>
+                <ul>
+                <li> Karen's Ballrom Dance, Wakefield MA, 8:00-10:00, Lesson 7:30</li>
+                <li> Swing Dance, Cambridge MA, 8:00-10:00, Lesson 7:30</li>
+                <li> Ballrom Dance - Super Shag, Waltham MA, 8:00-10:00, Lesson 8:00</li>
+                <li> Karen's Ballrom Dance, Wakefield MA, 8:00-10:00, Lesson 7:30</li>
+                <li> Karen's Ballrom Dance, Wakefield MA, 8:00-10:00, Lesson 7:30</li>
+                </ul>
+            </p>
+        </div>
+
+        <div  class="grd-img-fri">  </div>
+
+        <button  onclick="doHTML()"> PRESS</button>
+ 
+    </div>
+</body>
+</html>

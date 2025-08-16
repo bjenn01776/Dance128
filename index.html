@@ -1,50 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link   rel ="stylesheet"      href="./STYLES/DanceStyles2.css" >
-    <script type="text/javascript" src ="./JSCRIPT/DanceWeb.js" ></script>
+    <title> Dance Book</title>
+
+    <!-- <link rel="styleSheet" type="text/css" href="CSS/main.css" /> -->
+
+    <!-- script src="JScript/myJavaScript.js"></script -->
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: block;
+            width: 90%;
+            /* outline: 3px red solid; */
+            background-color: rgb(81, 176, 200);
+        }
+
+        .hdr {
+            display: flex;
+            height: 6vh;
+            background-color: rgb(175, 209, 144);
+        }
+
+       
+
+        .navbar {
+            display: block;
+            height: 6vh;
+            background-color: rgb(87, 84, 84);
+            font-size: px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+        }
+
+        .logo {
+            /* float:left; */
+            margin-left: 1.2em;
+            height: 3.2em;
+            width:  3.2em;
+            border-radius: 1.8em;
+            background-image: url('./Images/dance-woman-legs-active-600x420.webp');
+            background-size: cover;
+            border: 2px white solid;
+        }
+
+        .box {
+            /* float: left; */
+            font-size: 2.4em;
+            font-family: Arial, Helvetica, sans-serif, Geneva, Verdana, sans-serif;
+            margin-left: 3.4rem;
+            margin-top: .3vh;
+        }
+
+         .nav_menu {
+            float: right;
+            margin-right: 24px;
+            margin-top:  1.2vh;
+
+            display: flex; 
+            justify-content: center;
+            align-items:     center;
+            column-gap: 1em;
+
+            font: 1.4rem white arial;
+            /* outline: 3px  green  solid;  */
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+
+        .pic {
+            height: 84vh;
+            background-image: url('./Images/danceLegs.webp');
+            background-position: 20%;
+            background-size: cover;
+            margin: auto;
+        }
+    </style>
 </head>
 
 <body>
-    <header>  
-        <h2>Dancing Bear</h2> 
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./PAGES/calender.htm">Calender</a></li>
-                <li><a href="./PAGES/Lessons.htm">Lessons</a></li>
-                <li><a href="./PAGES/Holiday.htm">Holiday</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <div class="container">
 
-    <div id="thurs" class="box" >
-        <div class="banner"> Thursday </div>
-    </div>
-
-        <div id="fri" class="box" >
-        <div class="banner"> Friday </div>
+        <div class="hdr">
+            <div class="logo"></div>
+            <div class="box"> DANCE BOOK</div> 
         </div>
 
-        <div class="box" id="sat">
-        <div class="banner"> Saturday </div>
-        
-        <!---   <h2><a href="https://Kadanse.com">Kadanse</a></h2>
-        <ul>
-        <li>Ballroom</li>
-        <li>Lesson 7:15</li>
-        <li>Dance: 8:00</li>
-        </ul>  -->
-        </div>
+        <nav class="navbar">
+            <div class="nav_menu">
+                <a href="Pages/test.html">Weekend</a>
+                <a href="Pages/cal.html">Calender </a>
+                <a href="Pages/weekend.html">Lessons</a>
+                <a href="Pages/myEmailJS.html">Join</a>
+                <a href="Pages/news.html">Dance Mash</a>
+            </div>
+        </nav>
 
+        <div class="pic">hello</div>
+        <!--button onclick="doHTML()"> PRESS</button -->
     </div>
-
-    <script> DanceDom()</script> 
 
 </body>
 </html>

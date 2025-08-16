@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   
+
+    <style> 
+
+*, *::after, *::before{ padding: 0; margin: 0; box-sizing: border-box;}
+
+    
+
+    body {
+        /* background-image:url('../Images/danceLegs.webp') ; */
+            background-image:url('../Images/dance-ballerSlippers.jpg') ;
+            background-size:contain;
+    }
+
+    .container {
+        width: 65%;
+        background-color: aliceblue;
+        outline: blue 2px solid;
+    }
+
+    .formFactor {
+        width: 460px;
+        border: 8px black solid;
+        background-color: gray;
+        margin: 2em auto 0 auto;
+        border-radius: 16px;
+    }
+
+    .formDiv { width:85%;}
+
+    label,h2 {
+        display: block;
+        font-size: 1.8em;
+        font-weight: 700;
+        margin:   1em  1em 0 1em;
+    }
+
+input,textarea  {
+    display: block;
+    width: 85%;
+    margin:  .2em  auto  ;
+    padding: .4em .4em  .4em .4em ;
+    font-size: 1.8em;
+    border-radius: 6px ;
+    }
+
+button {
+    display:   block;
+    width:     85%;
+    margin:    1em auto;
+    height:    2.8em;
+    font-size: 1.8em;
+    font-weight: 700;
+    background-color: burlywood;
+    border-radius: 6px;
+    }
+
+    
+button[type='submit']:hover {
+        background-color: aquamarine;
+    }
+    
+    </style>
+</head>
+<body>
+
+   
+     
+    <form   id="myForm"  class="formFactor"  method="Post"  onsubmit="bjMail()">
+        
+
+        <div style="margin-top: 1.2em";></div>
+
+        
+        <label for="name"> Name: </label>
+        <input type="text" name="name" id="name" required>
+     
+        <label for="mail"> Email: </label>
+        <input type="email"  name="mail" id="email" required>
+
+        <label for="phone" >Phone: </label>
+        <input type="tel" name="phone" id="phone" required> 
+        
+        <label for="subject" >Subject: </label>
+        <input type="text" name="subject" id="subject" required> 
+        
+        <h2> Message:</h2>
+        <textarea cols="48" rows="6" name="message" id="message"></textarea>
+
+        <button type="submit" id="btn">  SUBMIT  </button> 
+    </form>
+
+   
+    <script src="../JScript/myEmail.js"></script>
+
+    
+</body>
+</html>
