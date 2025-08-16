@@ -1,0 +1,64 @@
+
+
+body {
+    display:            flex;
+    flex-direction:   column;
+    align-items:      center;
+    background-color:lavender;
+    width: 70%;
+    margin:  auto;
+    margin-top: 1.3em;
+}
+
+.container
+{
+    display:            flex;
+    flex-direction:   column;
+    align-items:      center;
+    border: 2px blue solid;
+    column-gap: 1.2em;
+    row-gap:    1.2em;
+    background-image: url("../Images/dance-ballerSlippers.jpg");
+}
+
+.box {
+    background-color:bisque;
+    color:   black;
+
+    width:       70%;
+    max-width: 250px;
+    
+    border: 3px gray solid;
+    border-radius: 22px;
+    box-shadow: 10px 8px 18px gray;
+}
+
+.box h1,h2,h3 {
+    margin: auto;
+    text-align: center;
+}
+
+.box h1 {
+    font-size: 1.6em;
+    color:darkblue;
+}
+
+@media(min-width: 600px){
+
+    body{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: nowrap;
+    }
+}
+
+ 

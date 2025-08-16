@@ -1,0 +1,113 @@
+
+ 
+.container{
+    background-color: rgb(110, 117, 110);
+    background-color: deeppink;
+    outline: black 3px solid;;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr );
+    grid-template-rows: auto;
+    grid-gap: 12px;
+    margin: auto;
+}
+
+.myImg {
+    height: auto;
+}
+
+.grd-header {
+    grid-column: 1/-1;
+    background-color: rgb(169, 123, 212);
+}
+
+.grd-header  h1 {
+   
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 64px;
+}
+
+.grd-txt{
+    grid-column: span 2;
+    padding: 2rem; 
+    justify-items: center;
+}
+
+ .grd-txt p { margin:auto;}
+
+.grd-txt-fri {                           
+    border: 3px whitesmoke solid;
+    background-color: rgb(100, 144, 70);
+    color: white;
+    padding: 22px 48px;
+    border-radius: 18px;
+}
+
+.grd-txt-fri  h1 {
+    font-size: 24px;
+    margin-top: 0px ;
+    text-align: center;
+}
+
+.grd-img-fri {
+    background-image: url('../Images/dance-couple_640x420.webp');
+    background-size: cover;
+}
+
+ 
+
+.grd-txt-sat {
+    border: 3px whitesmoke solid;
+    background-color: rgb(49, 128, 162);
+    color: white;
+    padding: 22px 48px;
+    border-radius: 18px;
+}
+
+.grd-txt-sat h1 {
+    font-size: 24px;
+    margin-top: 0px ;
+    text-align: center;
+}
+
+.grd-img-sat {
+    background-image: url('../Images/dance-woman-legs-active-600x420.webp');
+    background-size: cover;
+}
+
+ 
+
+
+ @media (max-width: 600px)
+ {
+    .container {
+        background-color: rgb(110, 117, 110);
+        background-color: deeppink;
+        outline: black 3px solid;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 85% ;
+        grid-template-rows:  auto;
+        grid-gap: 0;
+        margin:auto;
+        justify-content: space-around;
+    }
+
+    .grd-txt{
+        grid-column: span 1;
+        width: 60%;
+        
+    }
+
+    .myImg {
+        height: 30vh;
+        grid-column: span 1;
+    }
+
+    .grd-img-sat {
+        display: none;
+    }
+
+ }

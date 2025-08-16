@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+.nav_hdr {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: sandybrown;
+
+    width:  auto;
+    min-height: 12vh;
+    margin: auto;
+    margin-top: 1.3em;
+}
+ 
+a {
+    text-decoration: none;
+    font-size:  1.4rem;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.logo {
+    flex: 1;
+    margin-left: .8em;
+    height: 3.6em;
+    width:  3.6em;
+    border-radius: 1.8em;
+    background-image: url('../Images/dance-woman-legs-active-600x420.webp');
+    background-size: cover;
+    border: 2px white solid;
+}
+ 
+.nav_box {
+    flex: 2;
+    font-size: 2.4em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+    margin-left: 3.4rem;
+    margin-top: .3vh;
+}
+
+.nav_menu {
+    flex: 4;
+    padding: 0 1.2em ;
+    
+    display:         flex;
+    justify-content: flex-end;
+    align-items:     center;
+    column-gap: .5em;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* outline: 3px  green  solid;  */
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px blue solid;
+    column-gap: 1.2em;
+    row-gap: 1.2em;
+    /* background-image: url("../Images/dance-ballerSlippers.jpg"); */
+    background-image: url('../Images/istockphoto-175537981-612x612.jpg');
+}
+
+.box {
+    background-color: rgb(179, 230, 179);
+    color: black;
+
+    width: 70%;
+    max-width: 250px;
+    margin-top: 1.2em;
+    padding-top: .8em;
+
+    border: 3px gray solid;
+    border-radius: 22px;
+    box-shadow:  10px 8px 18px gray;
+    box-shadow: -12px -10px 18px white;
+}
+
+.sbox {
+  box-shadow:  10px 8px 18px gray;
+}
+
+.box h1,
+    h2,
+    h3 {
+    margin: auto;
+    text-align: center;
+}
+
+.box h1 {
+    font-size: 1.6em;
+    color: darkblue;
+}
+
+@media(min-width: 600px) {
+
+    body {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a{ font-size: 1.2em; }
+
+    .menu {
+    align-self:center;
+    flex: 7;
+    padding-right: 3em ;
+    /* margin-right: 24px;  */
+    /* margin-top: 1.2vh; */
+
+    display:         flex;
+    justify-content: flex-end;
+    align-items:     center;
+    column-gap: 1em;
+
+    font: 1.4rem white arial;
+    font-weight: bold;
+    /* outline: 3px  green  solid;  */
+}
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: nowrap;
+    }
+}
