@@ -8,7 +8,17 @@
             background-color: beige;
         }
 
+        .container {
+            width: 85%;
+             max-width: 760px;
+        }
+
+        .hdr {
+            display: flex;
+        }
+
         .month {
+            flex: 7;
             background-color: lightblue;
             border: 2px black solid;
             width: 90%;
@@ -22,24 +32,32 @@
             margin-top: 16px;
             padding-top: 12px;
         }
+        .container_wkdy {
+
+            display: flex;
+            
+        }
+        .wkdy {
+            flex:1;
+            border: 2px solid black;
+            text-align: center;
+        }
 
         #cal {
             display: grid;
             grid-template-columns: repeat(7, 1fr);
             grid-template-rows: repeat(5, 64px);
             grid-gap: 3px;
-            width: 90%;
-            max-width: 760px;
+            width: 100%;
+           
             margin: auto;
         }
 
-        .day {
-            background-color: cadetblue;
-        }
-
-        .day1 {
-            background-color: cadetblue;
-            grid-column: 3/3;
+        .btn {
+            flex: 1;
+            background-color: black;
+            color: white;
+            border: yellow 3px solid;
         }
 
         .boxND {
@@ -50,6 +68,16 @@
             background-color: lightgreen;
             text-align: center;
             box-shadow: 3px 3px gray;
+
+        .xday {
+            background-color: cadetblue;
+        }
+        .xday1 {
+            background-color: cadetblue;
+            grid-column: 3/3;
+        }
+
+       
         }
     </style>
 
@@ -57,14 +85,36 @@
 
 <body>
 
-    <div class="month">
-        <h1 id="mname"> September</h1>
+    <div class="container">
+
+        <div class="hdr">
+            <div class="month">
+                <h1 id="mname"> September</h1>
+            </div>
+            <div class="btn" id="bup">
+                <p>UP</p>
+            </div>
+            <div class="btn" id="bdwn">
+                <p>DWN</p>
+            </div>
+        </div>
+        <div class="container_wkdy">
+            <div class="wkdy">Sunday</div>
+            <div class="wkdy">Monday</div>
+            <div class="wkdy">Tuesday</div>
+            <div class="wkdy">Wedsday</div>
+            <div class="wkdy">Thursday</div>
+            <div class="wkdy">Friday</div>
+            <div class="wkdy">Saturday</div>
+        </div>
+
+
+        <div id="cal">
+
+        </div>
+
     </div>
 
-    <div id="cal">
-
-    </div>
-    
     <script> calender() </script>
 
 </body>
