@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="styleSheet" type="text/css" href="../Styles/header.css" />
+	<link rel="styleSheet" type="text/css" href="../Styles/card_box.css" />
+
+
+<style>
+	.selector {
+		display:flex;
+		height: 5vh;
+		justify-content: space-between;
+		align-items: center;
+		background-color: steelblue;
+		width:auto;
+		text-align: center;
+		color: white;
+		font-size: 1.4em;
+		}
+
+		.btnP {
+			height: 5vh;
+			width: 8em;
+			background-color: darkgrey;
+			font-size: 1.3em;
+			font-weight: bold;
+		}
+		.btnN {
+			height:5vh;
+			width: 8em;
+			background-color: darkgrey;	
+			font-size: 1.3em;
+			font-weight: bold;		
+		}
+
+
+		</style>
+	<script>
+		function next() {
+		 
+			// window.open('SchedWk3.html');
+			window.location.href = 'SchedWk1.html'
+		}
+		function prev() {
+		 
+			// window.open('SchedWk1.html');
+			window.location.href = 'SchedWk3.html'
+		}
+	</script>
+
+
+ </head>
+
+<body>
+
+	
+	<div class="hdr">
+		<div class="logo"></div>
+		<div class="hdr_box">DANCEBOOK</div>
+	</div>
+
+	<nav class="navbar">
+		<div class="nav_menu">
+			<a href="../Pages/weekend.html">Dances</a>
+			<a href="../Pages/cal.html">Calender </a>
+			<a href="../Pages/news.html">Events</a>
+			<a href="../EmailsForms/myEmailJS.html">Join</a>
+		</div>
+	</nav>
+
+	<div class="selector">
+		<button class="btnP" onclick="prev()"> Prev </button>
+
+		Weekend Schedule
+
+		<button class="btnN" onclick="next()">Next</button>
+	</div>
+
+
+	<div class="container">
+ <div class=box>
+	 <h1> FRIDAY  </h1>
+	 <h2> OCTOBER 24 </h2>
+	 <h2> VFW Bedford </h2>
+	 <h3> Swing/FreeStyle </h3>
+	 <h3> 7:00 </h3>
+</div>
+<div class=box>
+	 <h1> SUNDAY  </h1>
+	 <h2> OCTOBER 26 </h2>
+	 <h2> Roseland </h2>
+	 <h3> Ballroom </h3>
+	 <h3> 1:00 PM </h3>
+</div>

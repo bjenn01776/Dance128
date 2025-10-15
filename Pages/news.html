@@ -1,6 +1,11 @@
 <html>
 <head>
     <style> 
+        img {
+            float: left;
+            margin: 0 .8em;
+        }
+        p { font-size: 1.2em;}
         
         .btn {
             width: 7em;
@@ -13,17 +18,43 @@
         }
 
     </style>
+
+ <script type="text/javascript"  defer src="../JScript/myTestJS.js"></script>
+
     <script>    
      function test(){
-        console.log("myh testing");
+        console.log("local::my testing");
      }
 
+     function test2(){
+        console.log("locaL:: my bj testing");
+     }
     </script>
 
  </head>
  
  <body>
-    <h1> DANCE NEWS </h1>
+    <h1 style="text-align: center;"> DANCE NEWS </h1>
+    <img src="C:\Users\Jill Bennings\Documents\WebDev\WebDance\Images\dance-ballerSlippers.jpg"> MyImage</img>
+    <p>    
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi doloribus at,
+         voluptas quae veniam deserunt numquam possimus sed iure et ut odio aperiam
+          sapiente cupiditate excepturi perferendis, soluta magnam blanditiis?Lorem ipsum dolor sit
+           amet consectetur adipisicing elit. Iste eveniet laudantium vel sit repellendus ab nulla cupiditate. Ex saepe suscipit
+            tempore laboriosam quod provident quasi nesciunt voluptates nulla alias at, nam voluptas explicabo veritatis exercitationem.
+             Doloremque cum vitae enim sapiente iste velit, impedit magnam incidunt, autem omnis beatae ad necessitatibus, repudiandae
+              similique ducimus hic aut quod nostrum est minus placeat rem porro quas? Doloremque a recusandae odit in laboriosam voluptatem
+               fugiat quis voluptate, laborum provident dolore fuga ipsam iure earum perferendis. Modi dolor laborum aperiam tenetur, aliquid
+                eos blanditiis reprehenderit, nisi eum atque illo voluptatem temporibus earum officiis recusandae. Doloremque, temporibus. Earum 
+                dolorem vel ea aliquam perspiciatis! Distinctio temporibus nobis culpa eius possimus praesentium debitis voluptate, aspernatur porro
+                 eaque officiis fugit accusantium deserunt ab rem, quaerat repellendus maiores deleniti. Doloribus et libero mollitia doloremque eum
+                  alias sed dolor? Iure saepe eius et sapiente, doloribus cumque mollitia atque, veritatis repellat nemo temporibus in ipsum expedita
+                   debitis provident ex laudantium officiis quia fuga. Voluptates sit ducimus nobis labore reprehenderit, repellat ratione molestias 
+                   in dolorem, deleniti id corporis dolor voluptatibus? Officia, nobis quibusdam facilis est laudantium voluptatem, repudiandae minus
+                    molestias magnam earum ratione. Exercitationem dolorem vero placeat assumenda, autem temporibus veritatis ipsa mollitia hic! Suscipit
+                     molestiae quis veritatis assumenda. Officiis, est? Ipsum accusamus
+           repudiandae sed delectus neque earum blanditiis distinctio exercitationem enim cum quasi, ratione quidem?
+    </p>
     <div  id="blk1">   
         <h1> DANCE EVENT </h1>
         <h2> DNE Ballroom Dance</h2>
@@ -37,12 +68,29 @@
         <button class="btn" onclick="test()"> JOIN </button>
     </div>        
 
-     
+    <div> <object type="text/html"  data="https://www.ticketsource.com/northshore-swing-dance-group/another-night-at-the-speakeasy-1925/2025-09-20/16:30/t-xmenjom"></object>  </div>
 
-    <script href="text/javascript" src="./JScript/parseSched.js">
-        alert("bj test pont")
-        test();
+  <script  >
+       // alert("bj test pont  2")
+        console.log('1: fetching()');
+        
+        const response = fetch("https://www.ticketsource.com/northshore-swing-dance-group/another-night-at-the-speakeasy-1925/2025-09-20/16:30/t-xmenjom");
+        response.then(()=>console.log(response.status));
     </script>
+
+<script>
+       // alert("bj test point:: about to fetch()");
+        console.log('2: about to fetch');
+       // fetch("https://www.ticketsource.com/northshore-swing-dance-group/another-night-at-the-speakeasy-1925/2025-09-20/16:30/t-xmenjom")
+       // .catch("bjen error!!!");
+</script>
+
+<script  >
+    console.log("external call")
+    myTestJS();
+</script>
+
+    
 <!--script href=" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"-->
 
 

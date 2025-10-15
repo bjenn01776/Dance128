@@ -1,20 +1,22 @@
 <html>
 
 <head>
-
+    <link rel="stylesheet" type="text/css" href="../Styles/header.css">
     <script type="text/javascript" src="../JScript/calender.js"></script>
     <style>
         body {
-            background-color: beige;
+            background-color: rgb(211, 211, 203);
         }
 
         .container {
             width: 85%;
-             max-width: 760px;
+            max-width: 760px;
+            margin: auto;
         }
 
-        .hdr {
+        .header {
             display: flex;
+            margin-top: 2em;
         }
 
         .month {
@@ -32,13 +34,13 @@
             margin-top: 16px;
             padding-top: 12px;
         }
-        .container_wkdy {
 
+        .container_wkdy {
             display: flex;
-            
         }
+
         .wkdy {
-            flex:1;
+            flex: 1;
             border: 2px solid black;
             text-align: center;
         }
@@ -49,7 +51,6 @@
             grid-template-rows: repeat(5, 64px);
             grid-gap: 3px;
             width: 100%;
-           
             margin: auto;
         }
 
@@ -69,15 +70,16 @@
             text-align: center;
             box-shadow: 3px 3px gray;
 
-        .xday {
-            background-color: cadetblue;
-        }
-        .xday1 {
-            background-color: cadetblue;
-            grid-column: 3/3;
-        }
+            .xday {
+                background-color: cadetblue;
+            }
 
-       
+            .xday1 {
+                background-color: cadetblue;
+                grid-column: 3/3;
+            }
+
+
         }
     </style>
 
@@ -88,6 +90,22 @@
     <div class="container">
 
         <div class="hdr">
+            <div class="logo"></div>
+            <div class="hdr_box">DANCEBOOK</div>
+        </div>
+        <nav class="navbar">
+            <div class="nav_menu">
+                
+                <a href="../index.html">Home</a>
+                <a href="../Pages/weekend.html">Dances</a>
+                <a href="../Pages/cal.html">Calender </a>
+                <a href="../Pages/news.html">Events</a>
+                <a href="../EmailForms/myEmailJS.html">Join</a>
+            </div>
+        </nav>
+
+
+        <div class="header">
             <div class="month">
                 <h1 id="mname"> September</h1>
             </div>
