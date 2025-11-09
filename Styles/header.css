@@ -1,87 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 
+.container {
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-top: 75px;
+    background-color: rgb(81, 176, 200);
+}
 
-	* {padding: 0;
-	margin: 0;}
-
-
-
+.hero {
+			position: sticky;
+			top: 0;
+		}
 .hdr {
-     display: flex;
-     height: 6vh;
-     background-color: rgb(175, 209, 144);
- }
+    display: flex;
+    height: 6vh;
+    background-color: rgb(175, 209, 144);
+}
 
- .logo {
-     margin-left: 1.2em;
-     height: 3.2em;
-     width: 3.2em;
-     border-radius: 1.8em;
-     background-image: url('../Images/dance-woman-legs-active-600x420.webp');
-     background-size: cover;
-     border: 2px white solid;
- }
+.logo {
+    margin-left: 1.2em;
+    height: 3.2em;
+    width: 3.2em;
+    border-radius: 1.8em;
+    background-image: url('../Images/dance-woman-legs-active-600x420.webp');
+    background-size: cover;
+    border: 2px white solid;
+}
 
- .hdr_box {
-     font-size: 2.2em;
-     font-family: Arial, Helvetica, sans-serif, Geneva, Verdana, sans-serif;
-     /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-     font-weight: bold;
-     margin-left: 3.4rem;
-     margin-top: .3vh;
- }
+.hdr_box {
+    font-size: 2.2em;
+    font-family: Arial, Helvetica, sans-serif, Geneva, Verdana, sans-serif;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-weight: bold;
+    margin-left: 3.4rem;
+    margin-top: .3vh;
+}
 
 
- .navbar {
-     display: block;
-     height: 6vh;
-     background-color: rgb(87, 84, 84);
-     font-family: Arial, Helvetica, sans-serif;
-     color: aliceblue;
- }
+.navbar {
+    display: block;
+    height: 6vh;
+    background-color: rgb(87, 84, 84);
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    position: relative;
+}
 
- .navbar a {
-     color: white;
-     text-decoration: none;
- }
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
 
- .nav_menu {
-     float: right;
-     margin-right: 24px;
-     margin-top: 1.2vh;
+.nav_menu {
+    float: right;
+    margin-right: 24px;
+    margin-top: 1.2vh;
 
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     column-gap: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1em;
 
-     font: 1.4em white arial;
- }
+    font: 1.4em white arial;
+}
 
- .selector {
-		display:flex;
-		height: 5vh;
-		justify-content: space-between;
-		align-items: center;
-		background-color: steelblue;
-		width:auto;
-		text-align: center;
-		color: white;
-		font-size: 1.4em;
-		}
+.selector {
+    display: flex;
+    height: 5vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: steelblue;
+    width: auto;
+    text-align: center;
+    color: white;
+    font-size: 1.4em;
+}
 
-		.btnP {
-			height: 5vh;
-			width: 8em;
-			background-color: darkgrey;
-			font-size: 1.0em;
-			font-weight: bold;
-		}
-		.btnN {
-			height:5vh;
-			width: 8em;
-			background-color: darkgrey;	
-			font-size: 1.0em;
-			font-weight: bold;		
-		}
+.btnP {
+    height: 5vh;
+    width: 8em;
+    background-color: darkgrey;
+    font-size: 1.0em;
+    font-weight: bold;
+}
 
+.btnN {
+    height: 5vh;
+    width: 8em;
+    background-color: darkgrey;
+    font-size: 1.0em;
+    font-weight: bold;
+}
