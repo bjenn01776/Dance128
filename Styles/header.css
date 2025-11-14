@@ -12,9 +12,10 @@
 }
 
 .hero {
-			position: sticky;
-			top: 0;
-		}
+	position: sticky;
+	top: 0;
+}
+
 .hdr {
     display: flex;
     height: 6vh;
@@ -22,9 +23,9 @@
 }
 
 .logo {
-    margin-left: 1.2em;
-    height: 3.2em;
-    width: 3.2em;
+    margin-left:   1.2em;
+    height:        3.2em;
+    width:         3.2em;
     border-radius: 1.8em;
     background-image: url('../Images/dance-woman-legs-active-600x420.webp');
     background-size: cover;
@@ -54,6 +55,7 @@
 .navbar a {
     color: white;
     text-decoration: none;
+    font-size: 1em;
 }
 
 .nav_menu {

@@ -1,8 +1,12 @@
 <html>
 
 <head>
+    <title>Calender</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../Styles/header.css">
     <script type="text/javascript" src="../JScript/calender.js"></script>
+
     <style>
         body {
             background-color: rgb(211, 211, 203);
@@ -16,7 +20,6 @@
 
         .header {
             display: flex;
-            margin-top: 2em;
         }
 
         .month {
@@ -37,12 +40,17 @@
 
         .container_wkdy {
             display: flex;
+            /* flex-wrap: nowrap; */
         }
 
         .wkdy {
             flex: 1;
             border: 2px solid black;
             text-align: center;
+            font-weight: bold;
+            /* flex-wrap: nowrap;
+            min-width:max-content;
+            flex-shrink: 1; */
         }
 
         #cal {
@@ -59,7 +67,14 @@
             background-color: black;
             color: white;
             border: yellow 3px solid;
+            align-items:flex-end;
+            justify-content: center;
+            min-width: 4em;
         }
+        .btn h1,p {text-align: center;
+            font-size: 1.4em;
+                margin:auto;
+    padding-top: 1.2em;}
 
         .boxND {
             background-color: lightpink;
@@ -79,7 +94,14 @@
                 grid-column: 3/3;
             }
 
+            /* @media(max-widht: 500px)
+            {
+                div.class.wk.content = "SUN";
+            } */
 
+        }
+        .nav_menu a {
+            font-size: .9em;
         }
     </style>
 
@@ -95,35 +117,37 @@
         </div>
         <nav class="navbar">
             <div class="nav_menu">
-                
                 <a href="../index.html">Home</a>
                 <a href="../Pages/weekend.html">Dances</a>
                 <a href="../Pages/cal.html">Calender </a>
-                <a href="../Pages/news.html">Events</a>
-                <a href="../EmailForms/myEmailJS.html">Join</a>
+                <a href="../Pages/Events.html">Events</a>
+                <!-- <a href="../EmailForms/myEmailJS.html">Join</a> -->
             </div>
         </nav>
 
 
         <div class="header">
+             <div class="btn" id="bup">
+                <h1>UP</h1>
+            </div>
+
             <div class="month">
                 <h1 id="mname"> September</h1>
             </div>
-            <div class="btn" id="bup">
-                <p>UP</p>
-            </div>
+           
             <div class="btn" id="bdwn">
                 <p>DWN</p>
             </div>
         </div>
+        
         <div class="container_wkdy">
-            <div class="wkdy">Sunday</div>
-            <div class="wkdy">Monday</div>
-            <div class="wkdy">Tuesday</div>
-            <div class="wkdy">Wedsday</div>
-            <div class="wkdy">Thursday</div>
-            <div class="wkdy">Friday</div>
-            <div class="wkdy">Saturday</div>
+            <div class="wkdy">Sun</div>
+            <div class="wkdy">Mon</div>
+            <div class="wkdy">Tue</div>
+            <div class="wkdy">Wed</div>
+            <div class="wkdy">Thu</div>
+            <div class="wkdy">Fri</div>
+            <div class="wkdy">Sat</div>
         </div>
 
 
