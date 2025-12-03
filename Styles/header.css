@@ -4,9 +4,9 @@
 }
 
 .container {
-    display: block;
-    width: 90%;
-    margin: auto;
+    display:   block;
+    width:       90%;
+    margin:     auto;
     margin-top: 75px;
     background-color: rgb(81, 176, 200);
 }
@@ -30,21 +30,27 @@
     background-image: url('../Images/dance-woman-legs-active-600x420.webp');
     background-size: cover;
     border: 2px white solid;
+    flex: 1;
 }
 
 .hdr_box {
-    font-size: 2.2em;
+    font-size: 1.8em;
     font-family: Arial, Helvetica, sans-serif, Geneva, Verdana, sans-serif;
     /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     font-weight: bold;
-    margin-left: 3.4rem;
-    margin-top: .3vh;
+    margin-left: 2.8rem;
+    margin-top: 1.0vh;
+    flex:6;
+}
+
+.hamBox {
+    flex: 1;
 }
 
 
 .navbar {
-    display: block;
+    display: none;
     height: 6vh;
     background-color: rgb(87, 84, 84);
     font-family: Arial, Helvetica, sans-serif;

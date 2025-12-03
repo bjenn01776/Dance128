@@ -92,9 +92,10 @@
             .xday1 {
                 background-color: cadetblue;
                 grid-column: 3/3;
+        
             }
 
-            /* @media(max-widht: 500px)
+            /* @media(max-width: 500px)
             {
                 div.class.wk.content = "SUN";
             } */
@@ -104,6 +105,18 @@
             font-size: .9em;
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("bup").addEventListener("click", function () {
+                //changeMonth(-1);
+                allert("Display Curr Day");
+            });
+
+          //  document.getElementById("bdwn").addEventListener("click", function () {
+          //      changeMonth(1);
+            });
+        });
+    </script>
 
 </head>
 

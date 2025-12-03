@@ -10,6 +10,11 @@
 	<link rel="styleSheet" type="text/css" href="Styles/header.css" />
 
     <style>
+
+        .root{
+             --hlr: 6px;
+        }
+
         .pic {
             height: 84vh;
             background-image: url('./Images/danceLegs.webp');
@@ -17,8 +22,116 @@
             background-size: cover;
             margin: auto;
         }
-    </style>
 
+       .hamburger {
+        display:  block;
+        width:    40px;
+        height:   40px;
+        background-color: white ;
+       
+        cursor:      pointer;
+        line-height: .4rem;
+       
+        position: fixed;
+        top:   80px;
+        right:  40px;
+        /* z-index: 10; */
+    }
+     .hamburger_90 {
+        display:  block;
+        width:    40px;
+        height:   35px;
+        position: fixed;
+        cursor:   pointer;
+        line-height: .4rem;
+        background-color: white ;
+        top:    80px;
+        right:  40px;
+        transform: rotate(90deg);
+    }
+
+
+    .ham_line {
+        width: 100%;
+        height: 5px;
+        background-color:black;
+        margin-top: 6px ;
+    }
+
+    .hamburger[nth-last-child]
+    {margin-bottom: 16px;}
+
+    .sidebar {
+        width: 15%;
+        /* height: 65vh; */
+        color: white;
+        background-color: rgb(111, 142, 226);
+        position: fixed;
+        top: 145px;
+        /* right: -200px; */
+        left: 110%;
+        transition: 'all 0.7s ease'; 
+        display: none;
+        padding: 1.2em;
+        border: 3px white solid
+    }
+
+    .sidebar ul li{
+        list-style-type: none;
+        padding: 0;
+        margin: 12px 0;
+        font-size: 1.4em;
+    }
+
+    .sidebar ul li a{
+        list-style-type: none;
+        text-decoration: none;
+        /* padding: 0;
+        margin: 12px 0;
+        font-size: 1.4em; */
+    }
+      
+      a:hover {
+        color: yellow;
+        background-color: darkblue;
+      }
+
+      @media(min-width: 600px)
+         {
+            .navbar {
+                display:block;
+            }
+            .hamburger{
+                 display:none;
+            }
+        }
+ </style>
+
+  <script>
+
+    window.onload = function() {
+            hamMenu();
+        };  
+
+      function hamMenu(){
+        console.log("in toggle()");
+        const hamburger = document.querySelector('.hamburger');
+        const sidebar   = document.querySelector('.sidebar');
+
+            hamburger.addEventListener('click', function(e) {
+            e.preventDefault();
+            this.classList.toggle('active');
+            console.log("hamburgler");
+            hamburger.style.backgroundColor = this.classList.contains('active') ?'gray': 'white'  ;
+           // hamburger.style.left            = this.classList.contains('active') ? '60px' : '10px';
+          sidebar.style.left             = this.classList.contains('active') ? '64%' : '-200px'; 
+            // sidebar.style.right             = this.classList.contains('active') ? '200px' : '-200px'; 
+            sidebar.style.display           = this.classList.contains('active') ? 'block' : 'none';     
+            hamburger.classList.toggle('hamburger_90');
+            sidebar.style.transition =  'all 0.9s ease-in-out';
+        });
+    }
+    </script>
 </head>
 
 <body>
@@ -27,25 +140,40 @@
 
         <div class="hdr">
             <div class="logo"></div>
-            <div class="hdr_box"> DANCE BOOK</div> 
+            <div class="hdr_box"> Dance Book </div> 
+            <div class="hamBox" > x</div>
         </div>
 
         <nav class="navbar">
             <div class="nav_menu">
-                <!-- <a href="Pages/weekend.html">Dances</a> -->
-                <a href="Pages/SchedWk1.html">Dances</a>
-                <a href="Pages/cal.html">Calender </a>
-                 <a href="Pages/Events.html">Holiday</a>
-                <!-- <a href="Pages/news.html">Events</a> -->
-                <!--a href="https://www.ticketsource.com/northshore-swing-dance-group/another-night-at-the-speakeasy-1925/2025-09-20/16:30/t-xmenjom">Event</a-->
-                <a href="EmailForms/postDance.html">Post</a>
-                <!-- <a href="Pages/test.html">List</a> -->
+                <a href="Pages/SchedWk1.html">Dances    </a>
+                <a href="Pages/cal.html">     Calender  </a>
+                <a href="Pages/Events.html">  Holiday   </a>
+                <a href="EmailForms/post.html">Post</a>
             </div>
         </nav>
+
+        <div class="hamburger">  
+          <div class="ham_line"></div>
+          <div class="ham_line"></div>
+          <div class="ham_line"></div>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li>  <a href="Pages/SchedWk1.html">Dances </a> </li>
+                <li>  <a href="Pages/cal.html">Calender </a> </li>
+                <li>  <a href="Pages/Events.html">Holiday </a> </li>
+                <li>  <a href="EmailForms/post.html">Post </a> </li>
+            </ul>
+        </div>
 
         <div class="pic">hello</div>
         
     </div>
+
+
+   
 
 </body>
 </html>
