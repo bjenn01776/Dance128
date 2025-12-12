@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../Styles/header.css">
     <script type="text/javascript" src="../JScript/calender.js"></script>
+    <script type="text/javascript" src="../JScript/hamburger.js"></script>
+
 
     <style>
         body {
@@ -105,18 +107,7 @@
             font-size: .9em;
         }
     </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById("bup").addEventListener("click", function () {
-                //changeMonth(-1);
-                allert("Display Curr Day");
-            });
 
-          //  document.getElementById("bdwn").addEventListener("click", function () {
-          //      changeMonth(1);
-            });
-        });
-    </script>
 
 </head>
 
@@ -127,13 +118,20 @@
         <div class="hdr">
             <div class="logo"></div>
             <div class="hdr_box">DANCEBOOK</div>
+
+            <div class="hamburger">  
+          <div class="ham_line"></div>
+          <div class="ham_line"></div>
+          <div class="ham_line"></div>
+            </div>
+            
         </div>
         <nav class="navbar">
             <div class="nav_menu">
                 <a href="../index.html">Home</a>
-                <a href="../Pages/weekend.html">Dances</a>
+                <a href="../Pages/SchedWk1.html">Dances</a>
                 <a href="../Pages/cal.html">Calender </a>
-                <a href="../Pages/Events.html">Events</a>
+                <a href="../Pages/Events.html">Holiday</a>
                 <!-- <a href="../EmailForms/myEmailJS.html">Join</a> -->
             </div>
         </nav>
@@ -163,11 +161,17 @@
             <div class="wkdy">Sat</div>
         </div>
 
-
-        <div id="cal">
-
+        <div class="sidebar">
+            <ul>
+                <li>  <a href="../index.html">Home    </a></li>
+                <li>  <a href="../Pages/SchedWk1.html">Dances </a> </li>
+                <li>  <a href="../Pages/cal.html">Calender </a> </li>
+                <li>  <a href="../Pages/Events.html">Holiday </a> </li>
+                <li>  <a href="../Pages/EmailForms/post.html">Post </a> </li>
+            </ul>
         </div>
 
+        <div id="cal">        </div>
     </div>
 
     <script> calender() </script>
