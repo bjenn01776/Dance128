@@ -64,6 +64,7 @@
                 gap: 12px;
                 max-width: 680px;
                 flex-wrap:wrap;
+                margin-top: 6.5em;
             }
 
             .box {
